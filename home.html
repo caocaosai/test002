@@ -77,39 +77,77 @@
                 </div>
             </div>
 <div class="wrapper wrapper-content animated fadeInRight">
-    <div class="row">
-        <div class="col-lg-12">
-            <div class="ibox float-e-margins">
-                <div class="ibox-content">
-                    <form id="FormAdd">
-                        <div class="row">
-                            <div class="col-md-12">
-                                <label for="">เลือกหัวข้อ</label>
-                                <select name="ROUND_ID" id="ROUND_ID" class="form-control" required>
-                                    <option value=""></option>
-                                    <option value="3">ระบบมีปัญหา</option>
-                                    <option value="4">ต้องการยืมอุกรณ์สำนักงาน</option>
-                                    <option value="5">จัดประชุมออนไลน์</option>
-                                    <option value="6">แจ้งปัญหาอื่นๆ</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="row" style="padding-top: 1%;">
-                            <div class="col-md-12">
-                                <div class="form-floating">
-                                    <label for="floatingTextarea2">รายละเอียด</label>
-                                    <textarea class="form-control" placeholder="โปรดกรอกรายละเอียด" id="floatingTextarea2" style="height: 100px"></textarea>
+    
+<div class="py-12">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <div class="card">
+                    <center><div class="card-header">หัวข้อเรื่อง</div></center>
+                    <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                        <th scope="col">ชื่อเจ้าหน้าที่</th>
+                        <th scope="col">หัวข้อเรื่อง</th>
+                        <th scope="col">รายละเอียด</th>
+                        <th scope="col">DATE</th>
+                        <th scope="col">Edit</th>
+                        <th scope="col">Delete</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                                                    <tr>
+                            <th>เจ้าหน้าที่</th>                           
+                            <td>ระบบมีปัญหา</td>
+                            <td>เข้า VPN ไม่ได้</td>
+                            <td>26-05-2021</td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/department/edit/2" class="btn btn-primary">แก้ไข</a>
+                            </td>
+                            <td>
+                                <a href="http://127.0.0.1:8000/department/softdelete/2" class="btn btn-warning">ลบข้อมูล</a>
+                            </td>
+                        </tr>
+                                                </tbody>
+                </table>
+                    
+                </div>
+                                </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <center><div class="card-header">แจ้งปัญหาการใช้งานหรืออื่นๆ</div></center>
+                    <div class="card-body">
+                        <form id="FormAdd">
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <label for="">เลือกหัวข้อและรายละเอียด</label>
+                                    <select name="ROUND_ID" id="ROUND_ID" class="form-control" required>
+                                        <option value=""></option>
+                                        <option value="3">ระบบมีปัญหา</option>
+                                        <option value="4">ต้องการยืมอุกรณ์สำนักงาน</option>
+                                        <option value="5">จัดประชุมออนไลน์</option>
+                                        <option value="6">แจ้งปัญหาอื่นๆ</option>
+                                    </select>
                                 </div>
                             </div>
-                        </div>
-                        <div class="row" style="padding-top: 1%;">
-                            <center><button type="button" class="btn btn-primary">บันทึก</button></center>
-                        </div>
-                    </form>   
-                </div>           
+                            <div class="row" style="padding-top: 1%;">
+                                <div class="col-md-12">
+                                    <div class="form-floating">
+                                        <label for="floatingTextarea2"></label>
+                                        <textarea class="form-control" placeholder="โปรดกรอกรายละเอียด" id="floatingTextarea2" style="height: 100px"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row" style="padding-top: 1%;">
+                                <center><button type="button" class="btn btn-primary">บันทึก</button></center>
+                            </div>
+                        </form>   
+                    </div>
+                </div>
             </div>
         </div>
     </div>
+</div>
 </div>
      <!-- Mainly scripts -->
     <script src="http://wfh.gistda.or.th/assets/admin/js/jquery-2.1.1.js"></script>
