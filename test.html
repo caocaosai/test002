@@ -1,0 +1,87 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="7JoQUTByKWGP1t6klFqWoQCyj24XaKQMUiZOc7Be">
+
+    <title>Gistda Login</title>
+    <link rel="shortcut icon" href="http://wfh.gistda.or.th/assets/img/Logo_Gistda.png">
+
+    <!-- Scripts -->
+    <script src="http://wfh.gistda.or.th/assets/js/app.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="http://wfh.gistda.or.th/assets/js/bootstrap.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="http://wfh.gistda.or.th/assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="http://wfh.gistda.or.th/assets/css/app.css" rel="stylesheet">
+</head>
+<body>
+        <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="card" style="top: 45%;">
+                    <center>
+                        <div class="row">
+                            <div class="col-md-12" style="margin-bottom: -5%; ">
+                                <a href="http://wfh.gistda.or.th"><img class="logo" src="http://wfh.gistda.or.th/assets/img/Logo_Gistda.png" alt="logo" ></a>
+                            </div>
+                        </div>
+                        <span style="color:rgb(160, 160, 160); font-weight: bold;" >
+                            WORK FROM HOME
+                        </span>
+                        <div class="card-body">
+                                <form method="POST" action="http://wfh.gistda.or.th/login">
+                                
+                                <input type="hidden" name="_token" value="7JoQUTByKWGP1t6klFqWoQCyj24XaKQMUiZOc7Be">                                <div class="form-group row">
+                                    <label for="username" class="col-md-4 col-form-label text-md-right" style="font-weight:bold;">Username</label>
+
+                                    <div class="col-md-6">
+                                        <input id="username" type="text" class="form-control " name="samaccountname" value="" required autocomplete="off" autofocus ="off">
+                                        
+
+                                                                            </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label for="password" class="col-md-4 col-form-label text-md-right" style="font-weight:bold;">Password</label>
+
+                                    <div class="col-md-6">
+                                        <input id="password" type="password" class="form-control " name="password" required autocomplete="current-password">
+
+                                                                            </div>
+                                </div>
+                                <div class="row" style="padding-bottom:5%;">
+                                    <div class="col-md-2"></div>
+                                    <div class="col-md-8">
+                                        <button type="submit" class="btn btn-submit btn-success btn-block">
+                                            Login
+                                        </button>
+                                    </div>
+                                    <div class="col-md-2"></div>
+                                </div>
+                            </form>
+                        </div>
+                    </center>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $(document).ready(function (){
+        // swal("ไม่สามารถใช้งานได้ในขณะนี้","ระบบ Work From Home ปิดระบบเพื่อสำรองและจัดการข้อมูลในวันที่ 05 มีค. 2564 เวลา 10.00-11.00","error");
+        // $('input#username').attr('disabled', true);
+        // $('input#password').attr('disabled', true);
+        // $('button.btn-submit').attr('disabled', true);
+    });
+</script>
+</html>
