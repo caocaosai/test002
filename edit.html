@@ -1,51 +1,174 @@
 
-<div class="py-12">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-            <div class="card">
-                    <center><div class="card-header">ดำเนินการแก้ไขปัญหา</div></center>
-                    <div class="card-body">
-                        <form action="http://127.0.0.1:8000/department/update/2" method="post">
-                            <input type="hidden" name="_token" value="r2C1J6jKL6fhZxhp7nUQyqyRxWa6qd6VAn1QGDrQ">                                <div class="form-group">
-                                <label for="department_name">รายละเอียด</label>
-                                <input type="text" class="form-control" name="department_name" value="เข้า VPN ไม่ได้">
-                            </div>
-                                                            <br>
-                            <input type="submit" value="อัพเดต" class="btn btn-primary">
-                        </form>
+<!DOCTYPE html>
+<html>
+
+<head>
+
+     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <title>E-Ticket EDIT</title>
+    <meta name="csrf-token" content="wh0Lqsf2w5WPx8baNiDM5bkzppMY8246SBes4yom">
+        <link href="http://wfh.gistda.or.th/assets/admin/css/bootstrap.min.css" rel="stylesheet">
+    <link href="http://wfh.gistda.or.th/assets/admin/font-awesome/css/font-awesome.css" rel="stylesheet">
+
+    <!-- Data Tables -->
+    <link href="http://wfh.gistda.or.th/assets/admin/css/plugins/dataTables/dataTables.bootstrap.css" rel="stylesheet">
+    <link href="http://wfh.gistda.or.th/assets/admin/css/plugins/dataTables/dataTables.responsive.css" rel="stylesheet">
+    <link href="http://wfh.gistda.or.th/assets/admin/css/plugins/dataTables/dataTables.tableTools.min.css" rel="stylesheet">
+
+
+    <link href="http://wfh.gistda.or.th/assets/admin/css/animate.css" rel="stylesheet">
+    <link href="http://wfh.gistda.or.th/assets/admin/css/style.css" rel="stylesheet">
+    <link href="http://wfh.gistda.or.th/assets/admin/vendors/sweetalert/css/sweetalert2.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://wfh.gistda.or.th/assets/global/css/modal.css" />
+    <link href="http://wfh.gistda.or.th/assets/admin/vendors/jquery-ui-1.12.0/jquery-ui.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://wfh.gistda.or.th/assets/global/plugins/orakuploader/orakuploader.css" />
+    <link rel="stylesheet" href="http://wfh.gistda.or.th/assets/global/plugins/bootstrap-datetimepicker-master/css/bootstrap-datetimepicker.css" />
+    <link rel="stylesheet" href="http://wfh.gistda.or.th/assets/global/plugins/bootstrap-daterangepicker-master/daterangepicker.css" />
+    <link rel="stylesheet" href="http://wfh.gistda.or.th/assets/admin/css/plugins/select2/select2.min.css" />
+    <link href="http://wfh.gistda.or.th/assets/admin/fonts/k2d.css" rel="stylesheet">
+    <link href="http://wfh.gistda.or.th/assets/css/bootstrap-datepicker3.min.css" rel="stylesheet">
+    <link href="http://wfh.gistda.or.th/assets/admin/css/custom.css" rel="stylesheet">
+    <link rel="shortcut icon" href="http://wfh.gistda.or.th/assets/img/Logo_Gistda.png">
+    <style>
+        .nav-label{
+            font-size: 120%;
+        }
+        .invalid-feedback{
+            color: red;
+            font-size: 120%;
+        }
+    </style>
+
+
+    <style>
+    p{
+        color: red;
+    }
+</style>
+</head>
+
+<body class="pace-done fixed-sidebar">
+    <div id="wrapper">
+        <div id="page-wrapper" class="gray-bg">
+            <div class="row border-bottom">
+                <nav class="navbar navbar-static-top  " role="navigation" style="margin-bottom: 0">
+                    <div class="navbar-header">
+                        <a class="navbar-minimalize minimalize-styl-2 btn btn-primary " href="#"><i class="fa fa-bars"></i> </a>
+                    </div>
+                    <ul class="nav navbar-top-links navbar-right">
+                        <li>
+                            <a href="http://wfh.gistda.or.th/logout" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                                <i class="fa fa-sign-out"></i> Log out
+                            </a>
+                            <form id="logout-form" action="http://wfh.gistda.or.th/logout" method="POST" class="d-none">
+                                <input type="hidden" name="_token" value="wh0Lqsf2w5WPx8baNiDM5bkzppMY8246SBes4yom">                            </form>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="row wrapper border-bottom white-bg page-heading">
+                <div class="col-lg-10">
+                    <center><h2>สำหรับเจ้าหน้าที่ ไอที</h2></center>
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"></li>
+                        </ol>       
+                </div>
+            </div>
+<div class="wrapper wrapper-content animated fadeInRight">
+    
+    <div class="py-12">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8">
+                <div class="card">
+                        <center><div class="card-header">ดำเนินการแก้ไขปัญหา</div></center>
+                        <div class="card-body">
+                            <form action="http://127.0.0.1:8000/department/update/2" method="post">
+                                <input type="hidden" name="_token" value="r2C1J6jKL6fhZxhp7nUQyqyRxWa6qd6VAn1QGDrQ">                                <div class="form-group">
+                                    <label for="department_name">รายละเอียด</label>
+                                    <input type="text" class="form-control" name="department_name" value="เข้า VPN ไม่ได้">
+                                </div>
+                                                                <br>
+                                <input type="submit" value="อัพเดต" class="btn btn-primary">
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 </div>
+</div>
+     <!-- Mainly scripts -->
+    <script src="http://wfh.gistda.or.th/assets/admin/js/jquery-2.1.1.js"></script>
+    <script type="text/javascript">
+        var url_gb = 'http://wfh.gistda.or.th';
+        var asset_gb = 'http://wfh.gistda.or.th/';
+
+        function getAmphur(province_id,province_ele,amphur_id,amphur_ele){
+            amphur_ele.html('');
+            amphur_ele.append('<option value >เลือกอำเภอ</option>');
+            $.ajax({
+                method : "GET",
+                url : url_gb+"/getAmphur/"+province_id,
+                dataType : 'json',
+            }).done(function(rec){
+                province_ele.val(province_id);
+                $.each(rec, function(index, val) {
+                    amphur_ele.append('<option value='+ val.id +' '+ (amphur_id == val.id ? 'selected' : '' ) +' zipcode="'+ val.zipcode +'" > '+ val.name_th +' </option>');
+                });
+                province_ele.select2();
+                amphur_ele.select2();
+            }).fail(function(){
+                swal("system.system_alert","system.system_error","error");
+            });
+        }
+
+        function zipcode (amphur_ele,zipcode_ele){
+            var ele = $(amphur_ele).find('option:selected');
+            zipcode_ele.val(ele.attr('zipcode'));
+        }
 
 
-<!doctype html>
-<html lang="en">
-<head>
-<!-- Required meta tags -->
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    </script>
+        <script src="http://wfh.gistda.or.th/assets/admin/vendors/jquery-ui.min.js" type="text/javascript"></script>
+    <script src="http://wfh.gistda.or.th/assets/admin/js/bootstrap.min.js"></script>
+    <script src="http://wfh.gistda.or.th/assets/admin/js/plugins/metisMenu/jquery.metisMenu.js"></script>
+    <script src="http://wfh.gistda.or.th/assets/admin/js/plugins/slimscroll/jquery.slimscroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
 
-<!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <script src="http://wfh.gistda.or.th/assets/admin/vendors/jquery.validate.min.js"></script>
 
-<title></title>
-  </head>
-<body>
- 
+    <!-- Data Tables -->
+    <script src="http://wfh.gistda.or.th/assets/admin/js/plugins/dataTables/jquery.dataTables.js"></script>
+    <script src="http://wfh.gistda.or.th/assets/admin/js/plugins/dataTables/dataTables.bootstrap.js"></script>
+    <script src="http://wfh.gistda.or.th/assets/admin/js/plugins/dataTables/dataTables.responsive.js"></script>
+    <script src="http://wfh.gistda.or.th/assets/admin/js/plugins/dataTables/dataTables.tableTools.min.js"></script>
 
-<!-- Optional JavaScript; choose one of the two! -->
 
-<!-- Option 1: Bootstrap Bundle with Popper -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    <!-- Custom and plugin javascript -->
+    <script src="http://wfh.gistda.or.th/assets/admin/js/inspinia.js"></script>
+    <script src="http://wfh.gistda.or.th/assets/admin/js/plugins/pace/pace.min.js"></script>
+    <script src="http://wfh.gistda.or.th/assets/js/bootstrap-datepicker.min.js"></script>
 
-<!-- Option 2: Separate Popper and Bootstrap JS -->
-<!--
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
--->
-  </body>
+    <!-- My Script -->
+    <script src="http://wfh.gistda.or.th/assets/admin/vendors/moment.min.js"></script>
+    <script src="http://wfh.gistda.or.th/assets/global/js/modal.js"></script>
+    <script src="http://wfh.gistda.or.th/assets/global/js/validate.js"></script>
+    <script src="http://wfh.gistda.or.th/assets/admin/vendors/sweetalert/js/sweetalert2.min.js"></script>
+    <script src="http://wfh.gistda.or.th/assets/global/js/modal.js"></script>
+    <script src="http://wfh.gistda.or.th/assets/global/js/validate.js"></script>
+    <script src="http://wfh.gistda.or.th/assets/global/plugins/bootstrap-datetimepicker-master/js/bootstrap-datetimepicker.js"></script>
+    <script src="http://wfh.gistda.or.th/assets/global/plugins/bootstrap-daterangepicker-master/daterangepicker.js"></script>
+    <script src="http://wfh.gistda.or.th/assets/global/plugins/Jquery-Price-Format/jquery.priceformat.js"></script>
+    <script src="http://wfh.gistda.or.th/assets/global/plugins/ckeditor/ckeditor.js"></script>
+    <script src="http://wfh.gistda.or.th/assets/global/plugins/ckeditor/config.js"></script>
+    <script src="http://wfh.gistda.or.th/assets/admin/js/plugins/select2/select2.full.min.js"></script>
+    <script src="http://wfh.gistda.or.th/assets/admin/js/function.js"></script>
+    <script src="http://wfh.gistda.or.th/assets/global/plugins/orakuploader/orakuploader.js"></script>
+
+
+</body>
+
 </html>
