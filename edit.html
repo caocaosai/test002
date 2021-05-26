@@ -86,12 +86,17 @@
                         <center><div class="card-header">ดำเนินการแก้ไขปัญหา</div></center>
                         <div class="card-body">
                             <form action="http://127.0.0.1:8000/department/update/2" method="post">
-                                <input type="hidden" name="_token" value="r2C1J6jKL6fhZxhp7nUQyqyRxWa6qd6VAn1QGDrQ">                                <div class="form-group">
-                                    <label for="department_name">รายละเอียด</label>
-                                    <input type="text" class="form-control" name="department_name" value="เข้า VPN ไม่ได้">
+                                <div class="row" style="padding-top: 1%;">
+                                    <div class="col-md-12">
+                                        <div class="form-floating">
+                                            <label for="floatingTextarea2"></label>
+                                            <textarea class="form-control" value="เข้า VPN ไม่ได้" id="floatingTextarea2" style="height: 100px"></textarea>
+                                        </div>
+                                    </div>
                                 </div>
-                                                                <br>
-                                <input type="submit" value="อัพเดต" class="btn btn-primary">
+                                <div class="row" style="padding-top: 1%;">
+                                    <center><button type="button" class="btn btn-primary">บันทึก</button></center>
+                                </div>
                             </form>
                         </div>
                     </div>
@@ -101,7 +106,7 @@
 </div>
 </div>
      <!-- Mainly scripts -->
-    <script src="http://wfh.gistda.or.th/assets/admin/js/jquery-2.1.1.js"></script>
+    <script src="http://wfh.gistda.or.th/assets/admin/js/jquery-2.1.1.js"></script> 
     <script type="text/javascript">
         var url_gb = 'http://wfh.gistda.or.th';
         var asset_gb = 'http://wfh.gistda.or.th/';
