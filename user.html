@@ -7,7 +7,7 @@
      <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-   <title>E-Ticket HOME</title>
+   <title>E-Ticket USER</title>
     <meta name="csrf-token" content="wh0Lqsf2w5WPx8baNiDM5bkzppMY8246SBes4yom">
         <link href="http://wfh.gistda.or.th/assets/admin/css/bootstrap.min.css" rel="stylesheet">
     <link href="http://wfh.gistda.or.th/assets/admin/font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -49,7 +49,6 @@
 </style>
 </head>
 
-
 <body class="pace-done fixed-sidebar">
     <div id="wrapper">
         <nav class="navbar-default navbar-static-side" role="navigation">
@@ -63,7 +62,7 @@
                             <a data-toggle="dropdown" class="dropdown-toggle" href="#">
                                 <span class="clear">
                                     <span class="block m-t-xs">
-                                        <strong class="font-bold">IT or USER name</strong>
+                                        <strong class="font-bold">USER_name</strong>
                                     </span>
                                 </span>
                             </a>
@@ -76,12 +75,6 @@
                                 <a href="http://wfh.gistda.or.th/Home">
                                     <i class="nav-icon fa fa-users"></i>
                                     <span class="nav-label">แจ้งปัญหาการใช้งานหรืออื่นๆ</span>
-                                </a>
-                            </li>
-                                                                                                            <li class="" >
-                                <a href="http://wfh.gistda.or.th/Form1">
-                                    <i class="nav-icon fa fa-clock-o"></i>
-                                    <span class="nav-label">สำหรับเจ้าหน้าที่ ไอที</span>
                                 </a>
                             </li>
                                                                                                             <li class="" >
@@ -113,89 +106,82 @@
             </div>
             <div class="row wrapper border-bottom white-bg page-heading">
                 <div class="col-lg-10">
-                    <center><h2>แจ้งปัญหาการใช้งานหรืออื่นๆ</h2></center>
+                    <center><h2>สำหรับ USER</h2></center>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"></li>
                         </ol>       
                 </div>
             </div>
 <div class="wrapper wrapper-content animated fadeInRight">
-    
-<div class="py-12">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <div class="card">
-                    <center><div class="card-header">หัวข้อเรื่อง</div></center>
-                    <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                        <th scope="col">USER</th>
-                        <th scope="col">หัวข้อเรื่อง</th>
-                        <th scope="col">รายละเอียด</th>
-                        <th scope="col">DATE</th>
-                        <th scope="col">Edit</th>
-                        <th scope="col">Delete</th>
-                        <th scope="col">ชื่อเจ้าหน้าที่</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th>ชื่อ USER</th>                           
-                            <td>ระบบมีปัญหา</td>
-                            <td>เข้า VPN ไม่ได้</td>
-                            <td>26-05-2021</td>
-                            <td>
-                                <a href="http://127.0.0.1:8000/department/edit/2" class="btn btn-primary">รับเคส</a>
-                            </td>
-                            <td>
-                                <a href="http://127.0.0.1:8000/department/softdelete/2" class="btn btn-warning">ลบข้อมูล</a>
-                            </td>
-                            <td>ชื่อเจ้าหน้าที่</td>
-                        </tr>
-                                                </tbody>
-                </table>
-                    
-                </div>
-                                </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <center><div class="card-header">แจ้งปัญหาการใช้งานหรืออื่นๆ</div></center>
-                    <div class="card-body">
-                        <form id="FormAdd">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <label for="">เลือกหัวข้อและรายละเอียด</label>
-                                    <select name="ROUND_ID" id="ROUND_ID" class="form-control" required>
-                                        <option value=""></option>
-                                        <option value="3">ระบบมีปัญหา</option>
-                                        <option value="4">ต้องการยืมอุกรณ์สำนักงาน</option>
-                                        <option value="5">จัดประชุมออนไลน์</option>
-                                        <option value="6">แจ้งปัญหาอื่นๆ</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="row" style="padding-top: 1%;">
-                                <div class="col-md-12">
-                                    <div class="form-floating">
-                                        <label for="floatingTextarea2"></label>
-                                        <textarea class="form-control" placeholder="โปรดกรอกรายละเอียด" id="floatingTextarea2" style="height: 100px"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row" style="padding-top: 1%;">
-                                <center><button type="button" class="btn btn-primary">บันทึก</button></center>
-                            </div>
-                        </form>   
+    <div class="py-12">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <center><div class="card-header">หัวข้อเรื่อง</div></center>
+                        <table class="table table-bordered">
+                        <thead>
+                            <tr>
+                            <th scope="col">USER</th>
+                            <th scope="col">หัวข้อเรื่อง</th>
+                            <th scope="col">รายละเอียด</th>
+                            <th scope="col">DATE</th>
+                            <th scope="col">Edit</th>
+                            <th scope="col">Delete</th>
+                            <th scope="col">ชื่อเจ้าหน้าที่</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th>ชื่อ USER</th>                           
+                                <td>ระบบมีปัญหา</td>
+                                <td>เข้า VPN ไม่ได้</td>
+                                <td>26-05-2021</td>
+                                <td>
+                                    <a href="http://127.0.0.1:8000/department/edit/2" class="btn btn-primary">แก้ไข</a>
+                                </td>
+                                <td>
+                                    <a href="http://127.0.0.1:8000/department/softdelete/2" class="btn btn-warning">ลบข้อมูล</a>
+                                </td>
+                                <td>ชื่อเจ้าหน้าที่</td>
+                            </tr>
+                        </tbody>
+                        </table>   
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
+    <div class="py-12">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                <div class="card">
+                        <center><div class="card-header">ดำเนินการแก้ไขปัญหา</div></center>
+                        <div class="card-body">
+                            <form action="http://127.0.0.1:8000/department/update/2" method="post">
+                                <div class="row" style="padding-top: 1%;">
+                                    <div class="col-md-12">
+                                        <div class="form-floating">
+                                            <label for="floatingTextarea2"></label>
+                                            <textarea class="form-control" placeholder="เข้า VPN ไม่ได้" id="floatingTextarea2" style="height: 100px"></textarea>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row" style="padding-top: 1%;">
+                                    <center><button type="button" class="btn btn-primary">บันทึก</button></center>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 </div>
 </div>
      <!-- Mainly scripts -->
-    <script src="http://wfh.gistda.or.th/assets/admin/js/jquery-2.1.1.js"></script>
+    <script src="http://wfh.gistda.or.th/assets/admin/js/jquery-2.1.1.js"></script> 
     <script type="text/javascript">
         var url_gb = 'http://wfh.gistda.or.th';
         var asset_gb = 'http://wfh.gistda.or.th/';
