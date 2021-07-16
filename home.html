@@ -7,7 +7,7 @@
      <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-   <title>E-Ticket HOME</title>
+   <title>Coco Smile - Logistic - Products</title>
     <meta name="csrf-token" content="wh0Lqsf2w5WPx8baNiDM5bkzppMY8246SBes4yom">
         <link href="http://wfh.gistda.or.th/assets/admin/css/bootstrap.min.css" rel="stylesheet">
     <link href="http://wfh.gistda.or.th/assets/admin/font-awesome/css/font-awesome.css" rel="stylesheet">
@@ -57,41 +57,50 @@
                 <ul class="nav metismenu" id="side-menu">
                     <li class="nav-header">
                         <div class="dropdown profile-element text-center">
-                            <span style="font-size: 150%; font-weight:bold; color:white;">
-                                GISTDA E-TICKET
+                            <span style="font-size: 200%; font-weight:bold; color:white;">
+                                Coco Smile
                             </span>
-                            <a data-toggle="dropdown" class="dropdown-toggle" href="#">
-                                <span class="clear">
-                                    <span class="block m-t-xs">
-                                        <strong class="font-bold">IT or USER name</strong>
-                                    </span>
-                                </span>
-                            </a>
                         </div>
                         <div class="logo-element">
-                            GISTDA E-TICKET
+                            <img src="images/after.jpg" alt="">
                         </div>
                     </li>
-                                                                                                    <li class="active" >
-                                <a href="http://wfh.gistda.or.th/Home">
-                                    <i class="nav-icon fa fa-users"></i>
-                                    <span class="nav-label">แจ้งปัญหาการใช้งานหรืออื่นๆ</span>
-                                </a>
-                            </li>
-                                                                                                            <li class="" >
-                                <a href="http://wfh.gistda.or.th/Form1">
-                                    <i class="nav-icon fa fa-clock-o"></i>
-                                    <span class="nav-label">สำหรับเจ้าหน้าที่ ไอที</span>
-                                </a>
-                            </li>
-                                                                                                            <li class="" >
-                                 <a href="http://wfh.gistda.or.th/Form1">
-                                    <i class="nav-icon fa fa-clock-o"></i>
-                                    <span class="nav-label">สำหรับ USER</span>
-                                </a>
-                            </li>
-                                                                                                            <li class="" >
-                                   
+                    <li class="active" >
+                        <a href="http://wfh.gistda.or.th/Home">
+                            <i class="nav-icon fa fa-users"></i>
+                            <span class="nav-label">HOME</span>
+                        </a>
+                    </li>
+                    <li class="" >
+                        <a href="http://wfh.gistda.or.th/Form1">
+                            <i class="nav-icon fa fa-clock-o"></i>
+                            <span class="nav-label">BENEFIT</span>
+                        </a>
+                    </li>
+                    <li class="" >
+                        <a href="http://wfh.gistda.or.th/Form1">
+                            <i class="nav-icon fa fa-clock-o"></i>
+                            <span class="nav-label">PRODUCTS</span>
+                        </a>
+                    </li>
+                    <li class="" >
+                        <a href="http://wfh.gistda.or.th/Form1">
+                            <i class="nav-icon fa fa-clock-o"></i>
+                            <span class="nav-label">LOGISTIC & ORDER</span>
+                        </a>
+                    </li>
+                    <li class="" >
+                        <a href="http://wfh.gistda.or.th/Form1">
+                            <i class="nav-icon fa fa-clock-o"></i>
+                            <span class="nav-label">CONTACT US</span>
+                        </a>
+                    </li>
+                    <li class="" >
+                        <a href="http://wfh.gistda.or.th/Form1">
+                            <i class="nav-icon fa fa-clock-o"></i>
+                            <span class="nav-label">SEARCH</span>
+                        </a>
+                    </li>             
             </div>
         </nav>
         <div id="page-wrapper" class="gray-bg">
@@ -103,7 +112,7 @@
                     <ul class="nav navbar-top-links navbar-right">
                         <li>
                             <a href="http://wfh.gistda.or.th/logout" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                                <i class="fa fa-sign-out"></i> Log out
+                                <i class="fa fa-sign-out"></i> 
                             </a>
                             <form id="logout-form" action="http://wfh.gistda.or.th/logout" method="POST" class="d-none">
                                 <input type="hidden" name="_token" value="wh0Lqsf2w5WPx8baNiDM5bkzppMY8246SBes4yom">                            </form>
@@ -113,7 +122,7 @@
             </div>
             <div class="row wrapper border-bottom white-bg page-heading">
                 <div class="col-lg-10">
-                    <center><h2>แจ้งปัญหาการใช้งานหรืออื่นๆ</h2></center>
+                    <center><h1>Products</h1></center>
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"></li>
                         </ol>       
@@ -124,76 +133,110 @@
 <div class="py-12">
     <div class="container">
         <div class="row">
-            <div class="col-md-8">
-                <div class="card">
-                    <center><div class="card-header">หัวข้อเรื่อง</div></center>
-                    <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                        <th scope="col">USER</th>
-                        <th scope="col">หัวข้อเรื่อง</th>
-                        <th scope="col">รายละเอียด</th>
-                        <th scope="col">DATE</th>
-                        <th scope="col">Edit</th>
-                        <th scope="col">Delete</th>
-                        <th scope="col">ชื่อเจ้าหน้าที่</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <th>ชื่อ USER</th>                           
-                            <td>ระบบมีปัญหา</td>
-                            <td>เข้า VPN ไม่ได้</td>
-                            <td>26-05-2021</td>
-                            <td>
-                                <a href="http://127.0.0.1:8000/department/edit/2" class="btn btn-primary">รับเคส</a>
-                            </td>
-                            <td>
-                                <a href="http://127.0.0.1:8000/department/softdelete/2" class="btn btn-warning">ลบข้อมูล</a>
-                            </td>
-                            <td>ชื่อเจ้าหน้าที่</td>
-                        </tr>
-                                                </tbody>
-                </table>
-                    
-                </div>
-                                </div>
-            <div class="col-md-4">
-                <div class="card">
-                    <center><div class="card-header">แจ้งปัญหาการใช้งานหรืออื่นๆ</div></center>
-                    <div class="card-body">
-                        <form id="FormAdd">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <label for="">เลือกหัวข้อและรายละเอียด</label>
-                                    <select name="ROUND_ID" id="ROUND_ID" class="form-control" required>
-                                        <option value=""></option>
-                                        <option value="3">ระบบมีปัญหา</option>
-                                        <option value="4">ต้องการยืมอุกรณ์สำนักงาน</option>
-                                        <option value="5">จัดประชุมออนไลน์</option>
-                                        <option value="6">แจ้งปัญหาอื่นๆ</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="row" style="padding-top: 1%;">
-                                <div class="col-md-12">
-                                    <div class="form-floating">
-                                        <label for="floatingTextarea2"></label>
-                                        <textarea class="form-control" placeholder="โปรดกรอกรายละเอียด" id="floatingTextarea2" style="height: 100px"></textarea>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row" style="padding-top: 1%;">
-                                <center><button type="button" class="btn btn-primary">บันทึก</button></center>
-                            </div>
-                        </form>   
+            <div class="products-grid">
+
+                <!-- PRODUCT -->
+                <div class="col-md-3 product">
+                    <div class="image">
+                        <a href="products-1Liter.html"><img src="images/home-product-1l-front.jpg" alt=""></a>
                     </div>
+                        <h2 class="text-left title"><a href="products-1Liter.html">1 Liter</a></h2>
+                        <p>ส่วนประกอบ<br>
+                        น้ำมะพร้าว  100%</p>
                 </div>
+                <!-- END PRODUCT -->
+
+                <!-- PRODUCT -->
+                <div class="col-md-3 product">
+                    <div class="image">
+                        <a href="products-500Milliliter.html"><img src="images/home-product-500ml-front.jpg" alt=""> </a>
+                    </div>
+                        <h2 class="text-left title"><a href="products-500Milliliter.html">500 Milliliter</a></h2>
+                        <p><p>ส่วนประกอบ<br>
+                        น้ำมะพร้าว  100%</p></p>
+                </div>
+                <!-- END PRODUCT -->
+
+                <!-- PRODUCT -->
+                <div class="col-md-3 product">
+                    <div class="image">
+                        <a href="products-1Literx12.html"><img src="images/home-product-1l-x12.jpg" alt=""></a>
+                    </div>
+                        <h2 class="text-left title"><a href="products-1Literx12.html">1 Liter x 12</a></h2>
+                        <p><p>ส่วนประกอบ<br>
+                        น้ำมะพร้าว  100%</p></p>
+                </div>
+                <!-- END PRODUCT -->
+
+                <!-- PRODUCT -->
+                <div class="col-md-3 product no-margin-bottom">
+                    <div class="image">
+                        <a href="products-500Milliliterx12.html"><img src="images/home-product-500ml-x12.jpg" alt=""></a>
+                    </div>
+                        <h2 class="text-left title"><a href="products-500Milliliterx12.html">500 Milliliter x 12</a></h2>
+                        <p><p>ส่วนประกอบ<br>
+                        น้ำมะพร้าว  100%</p></p>
+                </div>
+                <!-- END PRODUCT -->
+
+                <div class="col-md-12">
+                    <img src="images/product-content.png" alt="">
+                </div>
+
             </div>
+        </div><!-- END ROw -->
+        <div class="row">
+            <div class="col-md-6">
+                <h2>Lorem ipsum dolor sit amet.</h2>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.</p>
+                <form class="">
+                    <input type="email" placeholder="Your email" class="form-control">
+                </form>
+                <form class="" style="padding-top: 2%;">
+                    <input type="submit" class="btn btn-default" value="SUBMIT">
+                </form>
+            </div> 
+        </div>
+<footer style="padding-top: 5%;">
+<div class="container">
+<div class="row">
+    <div class="col-md-6">
+        <div class="col-md-6 col-md-offset-1 visible-lg visible-md" style="text-align: right;">
+            <ul class="footer-nav">
+                <li>
+                    <div style="font-size: 14px">122 SOI LARDPRAO 26, JOMPOL, JATUJAK, BANGKOK 10900 THAILAND</div>
+                </li> 
+                <li>
+                    <div style="font-size: 14px">T.02-938-4477,  F.02-938-6275, E.info@naturefb.com</div>
+                </li>
+                <li>
+                    <div style="line-height: 60px; font-size: 12px">© 2016 COCO SMILE BY NATURE FOOD & BEVERAGE CO.,LTD.</div>
+                </li>                     
+            </ul>
+        </div>
+
+        <div class="col-md-6 col-md-offset-1 visible-sm visible-xs" style="text-align: center; margin-top: 20px">
+            <ul class="footer-nav">
+                <li>
+                    <div style="font-size: 14px">122 SOI LARDPRAO 26, JOMPOL, JATUJAK, BANGKOK 10900 THAILAND</div>
+                </li> 
+                <li>
+                    <div style="font-size: 14px">T.02-938-4477,  F.02-938-6275, E.info@naturefb.com</div>
+                </li>
+                <li>
+                    <div style="line-height: 60px; font-size: 12px">© 2016 COCO SMILE BY NATURE FOOD & BEVERAGE CO.,LTD.</div>
+                </li>                     
+            </ul>
         </div>
     </div>
 </div>
 </div>
+</footer>
+    </div>
+</div>
+
+
+<!-- Scripts -->
      <!-- Mainly scripts -->
     <script src="http://wfh.gistda.or.th/assets/admin/js/jquery-2.1.1.js"></script>
     <script type="text/javascript">
